@@ -1,0 +1,57 @@
+html,body
+	{
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -moz-user-select: -moz-none;
+		  -ms-user-select: none;
+		  user-select: none;
+
+	}
+
+.not-selectable 
+	{
+		  -webkit-touch-callout: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -moz-user-select: -moz-none;
+		  -ms-user-select: none;
+		  user-select: none;
+
+	}
+	*.unselectable 
+	{
+   		-moz-user-select: none;
+   		-khtml-user-select: none;
+   		-webkit-user-select: none;
+
+	   /*
+	     Introduced in Internet Explorer 10.
+	     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+	   */
+	   -ms-user-select: none;
+	   user-select: none;
+	}	
+	* {
+	    -webkit-user-select: none;
+	    -khtml-user-select: none;
+	    -moz-user-select: -moz-none;
+	    -o-user-select: none;
+	    user-select: none;
+	}
+	canvas {
+	    -webkit-user-select: none;
+	    -khtml-user-select: none;
+	    -moz-user-select: -moz-none;
+	    -o-user-select: none;
+	    user-select: none;
+	}
+	p {
+	    -webkit-user-select: text;
+	    -khtml-user-select: text;
+	    -moz-user-select: text;
+	    -o-user-select: text;
+	    user-select: text;
+	}

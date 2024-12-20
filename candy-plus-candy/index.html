@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta charset="UTF-8">
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" type="image/x-icon" href="favicon.ico" />
+<meta name="developed-by" content="gamesrishti studio">
+<meta name="description" content="This is a move and match game.">
+<meta name="keywords" content="Candy Games, Matching Games, Match 3 Games, Puzzle Games">
+<meta name="author" content="lofgames.com"> 
+<title>Candy Plus Candy</title>
+<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+<script src="https://lofgames.com/games/lfdp2023e.js?candy_plus_candy" type="text/javascript"></script>
+<style>
+	body  {
+	  background-image: url("https://lofgames.com/games/com_img/bg_body.webp");  
+	}
+	*{-webkit-tap-highlight-color: rgba(0, 0, 0, 0);-moz-tap-highlight-color: rgba(0, 0, 0, 0);	}
+    #canvas {position:absolute;	margin:auto;left:0;right:0;top:0;bottom:0;}
+    loaderset {position: absolute;display:none; width:10px; height:10px;}.img1 {cursor: pointer; position: relative; z-index: 1;left:0;right:0;top:0;bottom:0;display:none;}.img2 {position: absolute;z-index: 2;top: 10px; left:10px;  width:5;  height:11; display:none;}
+</style>
+<script src="candy_plus_candy.js?1683098226427"></script>
+<script>
+// Global Scripts
+	function _0x3260(){var _0x32f248=['\x53\x44\x4b\x5f\x52\x45\x57\x41\x52\x44\x45\x44\x5f\x57\x41\x54\x43\x48\x5f\x43\x4f\x4d\x50\x4c\x45\x54\x45','\x41\x44\x5f\x45\x52\x52\x4f\x52','\x62\x69\x6e\x64','\x73\x72\x63','\x69\x6e\x66\x6f','\x69\x6e\x73\x65\x72\x74\x42\x65\x66\x6f\x72\x65','\x32\x33\x32\x39\x32\x33\x36\x42\x65\x66\x6b\x43\x7a','\x31\x36\x54\x44\x74\x6c\x54\x48','\x31\x37\x31\x4e\x66\x59\x6a\x63\x4e','\x74\x72\x61\x63\x65','\x67\x61\x6d\x65\x64\x69\x73\x74\x72\x69\x62\x75\x74\x69\x6f\x6e\x2d\x6a\x73\x73\x64\x6b','\x70\x72\x6f\x74\x6f\x74\x79\x70\x65','\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74','\x72\x65\x6d\x6f\x76\x65\x43\x68\x69\x6c\x64','\x53\x44\x4b\x5f\x47\x41\x4d\x45\x5f\x50\x41\x55\x53\x45','\x74\x6f\x53\x74\x72\x69\x6e\x67','\x65\x72\x72\x6f\x72','\x74\x61\x62\x6c\x65','\x73\x6e\x64\x50\x61\x75\x73\x65','\x35\x36\x38\x39\x37\x30\x42\x4b\x72\x49\x5a\x50','\x6c\x6f\x63\x61\x6c\x50\x61\x75\x73\x65','\x6e\x61\x6d\x65','\x5f\x5f\x70\x72\x6f\x74\x6f\x5f\x5f','\x53\x4b\x49\x50\x50\x45\x44','\x63\x61\x6c\x6c','\x36\x33\x33\x37\x34\x6e\x67\x42\x59\x72\x4c','\x6c\x6f\x63\x61\x74\x69\x6f\x6e','\x72\x65\x73\x75\x6d\x65\x41\x6c\x6c\x54\x77\x65\x65\x6e\x73','\x73\x65\x61\x72\x63\x68','\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72','\x33\x39\x59\x67\x76\x77\x42\x4a','\x65\x78\x63\x65\x70\x74\x69\x6f\x6e','\x77\x61\x72\x6e','\x6e\x65\x78\x74\x43\x61\x6c\x6c\x46\x75\x6e\x63\x74\x69\x6f\x6e','\x61\x70\x70\x6c\x79','\x31\x35\x34\x35\x37\x30\x38\x74\x65\x4e\x6c\x62\x6b','\x72\x65\x77\x61\x72\x64\x46\x75\x6e\x63\x74\x69\x6f\x6e','\x35\x39\x30\x37\x30\x36\x73\x58\x59\x53\x41\x73','\x69\x6e\x64\x65\x78\x4f\x66','\x6c\x6f\x67','\x6c\x6f\x61\x64\x6d\x63','\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x42\x79\x49\x64','\x32\x38\x36\x32\x38\x38\x48\x78\x6b\x6b\x51\x51','\x32\x35\x38\x30\x39\x35\x30\x39\x62\x6f\x48\x66\x7a\x68','\x72\x65\x74\x75\x72\x6e\x20\x28\x66\x75\x6e\x63\x74\x69\x6f\x6e\x28\x29\x20','\x7b\x7d\x2e\x63\x6f\x6e\x73\x74\x72\x75\x63\x74\x6f\x72\x28\x22\x72\x65\x74\x75\x72\x6e\x20\x74\x68\x69\x73\x22\x29\x28\x20\x29','\x68\x74\x74\x70\x73\x3a\x2f\x2f\x68\x74\x6d\x6c\x35\x2e\x61\x70\x69\x2e\x67\x61\x6d\x65\x64\x69\x73\x74\x72\x69\x62\x75\x74\x69\x6f\x6e\x2e\x63\x6f\x6d\x2f\x6d\x61\x69\x6e\x2e\x6d\x69\x6e\x2e\x6a\x73','\x47\x44\x5f\x4f\x50\x54\x49\x4f\x4e\x53','\x31\x30\x61\x76\x44\x6f\x6b\x6e','\x63\x6f\x6e\x73\x6f\x6c\x65','\x70\x61\x75\x73\x65\x64','\x6c\x65\x6e\x67\x74\x68','\x72\x65\x77\x61\x72\x64\x46\x61\x69\x6c\x65\x64\x46\x75\x6e\x63\x74\x69\x6f\x6e','\x54\x77\x65\x65\x6e','\x73\x74\x61\x67\x65','\x70\x61\x75\x73\x65\x41\x6c\x6c\x54\x77\x65\x65\x6e\x73','\x28\x28\x28\x2e\x2b\x29\x2b\x29\x2b\x29\x2b\x24'];_0x3260=function(){return _0x32f248;};return _0x3260();}var _0x449fcf=_0x5216;(function(_0x52ee48,_0x2c6dab){var _0x5095a8=_0x5216,_0x5c49d2=_0x52ee48();while(!![]){try{var _0x50ad1f=parseInt(_0x5095a8(0x1fc))/0x1+parseInt(_0x5095a8(0x229))/0x2*(parseInt(_0x5095a8(0x1f5))/0x3)+-parseInt(_0x5095a8(0x217))/0x4*(-parseInt(_0x5095a8(0x223))/0x5)+parseInt(_0x5095a8(0x1fa))/0x6+parseInt(_0x5095a8(0x216))/0x7+-parseInt(_0x5095a8(0x201))/0x8*(-parseInt(_0x5095a8(0x218))/0x9)+-parseInt(_0x5095a8(0x207))/0xa*(parseInt(_0x5095a8(0x202))/0xb);if(_0x50ad1f===_0x2c6dab)break;else _0x5c49d2['push'](_0x5c49d2['shift']());}catch(_0xcdf0a){_0x5c49d2['push'](_0x5c49d2['shift']());}}}(_0x3260,0x5d362));function _0x5216(_0x3a526f,_0x22a419){var _0x1cc3f0=_0x3260();return _0x5216=function(_0x452d51,_0x444f16){_0x452d51=_0x452d51-0x1f3;var _0x4163a5=_0x1cc3f0[_0x452d51];return _0x4163a5;},_0x5216(_0x3a526f,_0x22a419);}var str=''+window[_0x449fcf(0x22a)]['\x68\x72\x65\x66'];str[_0x449fcf(0x1fd)]('\x2e\x67\x61\x6d\x65\x64\x69\x73\x74\x72\x69\x62\x75\x74\x69\x6f\x6e\x2e\x63\x6f\x6d')>=0x0&&(window[_0x449fcf(0x206)]={'\x67\x61\x6d\x65\x49\x64':'\x36\x31\x33\x33\x32\x66\x32\x33\x32\x33\x36\x32\x34\x65\x33\x64\x62\x35\x31\x37\x33\x35\x63\x63\x66\x37\x31\x63\x61\x65\x34\x33','\x6f\x6e\x45\x76\x65\x6e\x74':function(_0x514e6f){var _0x1aa9f4=_0x449fcf;switch(_0x514e6f[_0x1aa9f4(0x225)]){case'\x53\x44\x4b\x5f\x47\x41\x4d\x45\x5f\x53\x54\x41\x52\x54':case _0x1aa9f4(0x211):createjs[_0x1aa9f4(0x20c)][_0x1aa9f4(0x22b)](),resumeSoundMusic();gv&&(gv[_0x1aa9f4(0x209)]=![],gv['\x73\x6e\x64\x50\x61\x75\x73\x65']=![],gv[_0x1aa9f4(0x224)]=![],gv[_0x1aa9f4(0x1ff)]&&(gv[_0x1aa9f4(0x20d)][_0x1aa9f4(0x21d)](gv[_0x1aa9f4(0x1ff)]),gv[_0x1aa9f4(0x1ff)]=null),gv['\x6e\x65\x78\x74\x43\x61\x6c\x6c\x46\x75\x6e\x63\x74\x69\x6f\x6e']&&(gv[_0x1aa9f4(0x1f8)][_0x1aa9f4(0x228)](null),gv['\x6e\x65\x78\x74\x43\x61\x6c\x6c\x46\x75\x6e\x63\x74\x69\x6f\x6e']=null));break;case _0x1aa9f4(0x21e):gv&&(gv['\x70\x61\x75\x73\x65\x64']=!![],gv[_0x1aa9f4(0x222)]=!![]);createjs[_0x1aa9f4(0x20c)][_0x1aa9f4(0x20e)](),puaseSoundMusic();break;case _0x1aa9f4(0x227):gv[_0x1aa9f4(0x20b)]&&(gv[_0x1aa9f4(0x20b)][_0x1aa9f4(0x228)](null),gamevars(0x2b));break;case _0x1aa9f4(0x210):gv[_0x1aa9f4(0x20b)]=null,gv[_0x1aa9f4(0x1fb)][_0x1aa9f4(0x228)](null),gamevars(0x2b);break;}}},function(_0x1c6aeb,_0x3953e1,_0x3ef6ee){var _0x4252aa=_0x449fcf,_0x37b103=(function(){var _0x4b145d=!![];return function(_0x4b2a8d,_0x248c26){var _0x3306f0=_0x4b145d?function(){var _0x1aa41b=_0x5216;if(_0x248c26){var _0x4ac799=_0x248c26[_0x1aa41b(0x1f9)](_0x4b2a8d,arguments);return _0x248c26=null,_0x4ac799;}}:function(){};return _0x4b145d=![],_0x3306f0;};}()),_0x14a091=_0x37b103(this,function(){var _0x5261f1=_0x5216;return _0x14a091[_0x5261f1(0x21f)]()['\x73\x65\x61\x72\x63\x68'](_0x5261f1(0x20f))[_0x5261f1(0x21f)]()[_0x5261f1(0x1f4)](_0x14a091)[_0x5261f1(0x1f3)]('\x28\x28\x28\x2e\x2b\x29\x2b\x29\x2b\x29\x2b\x24');});_0x14a091();var _0x124ccd=(function(){var _0x13a9a8=!![];return function(_0x580a24,_0x47e145){var _0x414163=_0x13a9a8?function(){var _0x33725a=_0x5216;if(_0x47e145){var _0x58f153=_0x47e145[_0x33725a(0x1f9)](_0x580a24,arguments);return _0x47e145=null,_0x58f153;}}:function(){};return _0x13a9a8=![],_0x414163;};}()),_0x37e401=_0x124ccd(this,function(){var _0x22f011=_0x5216,_0x55b232=function(){var _0x33d787=_0x5216,_0x122f1f;try{_0x122f1f=Function(_0x33d787(0x203)+_0x33d787(0x204)+'\x29\x3b')();}catch(_0x511ceb){_0x122f1f=window;}return _0x122f1f;},_0x1eba44=_0x55b232(),_0x204852=_0x1eba44[_0x22f011(0x208)]=_0x1eba44[_0x22f011(0x208)]||{},_0xe4f931=[_0x22f011(0x1fe),_0x22f011(0x1f7),_0x22f011(0x214),_0x22f011(0x220),_0x22f011(0x1f6),_0x22f011(0x221),_0x22f011(0x219)];for(var _0x473d06=0x0;_0x473d06<_0xe4f931[_0x22f011(0x20a)];_0x473d06++){var _0x7674ed=_0x124ccd[_0x22f011(0x1f4)][_0x22f011(0x21b)][_0x22f011(0x212)](_0x124ccd),_0x144572=_0xe4f931[_0x473d06],_0x3a5057=_0x204852[_0x144572]||_0x7674ed;_0x7674ed[_0x22f011(0x226)]=_0x124ccd[_0x22f011(0x212)](_0x124ccd),_0x7674ed[_0x22f011(0x21f)]=_0x3a5057[_0x22f011(0x21f)]['\x62\x69\x6e\x64'](_0x3a5057),_0x204852[_0x144572]=_0x7674ed;}});_0x37e401();var _0x3f7833,_0x4b9066=_0x1c6aeb['\x67\x65\x74\x45\x6c\x65\x6d\x65\x6e\x74\x73\x42\x79\x54\x61\x67\x4e\x61\x6d\x65'](_0x3953e1)[0x0];if(_0x1c6aeb[_0x4252aa(0x200)](_0x3ef6ee))return;_0x3f7833=_0x1c6aeb[_0x4252aa(0x21c)](_0x3953e1),_0x3f7833['\x69\x64']=_0x3ef6ee,_0x3f7833[_0x4252aa(0x213)]=_0x4252aa(0x205),_0x4b9066['\x70\x61\x72\x65\x6e\x74\x4e\x6f\x64\x65'][_0x4252aa(0x215)](_0x3f7833,_0x4b9066);}(document,'\x73\x63\x72\x69\x70\x74',_0x449fcf(0x21a)));</script>
+<script type='text/javascript' src='https://lofgames.com/games/astar.js'></script>
+<script>
+var canvas, stage, exportRoot, fnStartAnimation, loadingBar, preloadBG, loadingAnim,preloaderDiv,beforeBG;
+var gameWidth = 1280;
+var gameHeight = 720;
+var barMaxWidth = 100;
+var barMaxHeight = 100;
+var barWidth = 426;
+var barHeigth = 16;
+var barXP = 427 ;
+var barYP = 582;
+var txtXP = 545;
+var txtYP = 630;
+var txtht = 50;
+var txtwt = 185;
+var showBbg = false;
+var gamerendered = false;
+window.addEventListener('resize', resizePreloader);
+function init() {
+	var key = Object.keys(AdobeAn.compositions)[0];  
+	var comp = AdobeAn.getComposition(key); 
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(true);  loader.setMaxConnections(9);
+	loader.installPlugin(createjs.Sound);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	loader.addEventListener("progress", handleProgress);
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+	canvas.style.display = 'none';
+	preloaderDiv.style.display = 'none';
+}
+function handleProgress(e){	
+	loadingBar.style.width =  (e.loaded/e.total) * barMaxWidth +"px";
+	loadingAnim.innerHTML = "LOADING:" + Math.ceil(e.loaded/e.total*100) + "%";
+	loadingBar.style.height= barMaxHeight +"px";
+	resizePreloader();	
+}
+function hidePreloader(){	
+	gamerendered = true;
+	preloaderDiv.style.display = 'none';
+	canvas.style.display = 'block';
+	window.removeEventListener('resize', resizePreloader);	
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.candy_plus_candy();
+	stage = new lib.Stage(canvas);
+	stage.enableMouseOver();	
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = w*sRatio+'px';				
+			canvas.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;            
+			stage.tickOnUpdate = false;            
+			stage.update();            
+			stage.tickOnUpdate = true;		
+		}
+	}
+	makeResponsive(true,'both',true,1);	
+	hidePreloader();	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+function playSound(id, loop) {
+	return createjs.Sound.play(id, createjs.Sound.INTERRUPT_EARLY, 0, 0, loop);
+}
+function resizePreloader(evt){
+	try{
+		var iw = window.innerWidth;
+		var	ih=window.innerHeight;		
+		var hR = ih/gameHeight;
+		var wR = iw/gameWidth;
+		wR = (hR > wR) ? wR : hR;
+		barMaxWidth = barWidth * wR;
+		barMaxHeight = barHeigth *wR;
+		beforeBG.style.width= preloadBG.style.width = (gameWidth*wR)+ 'px';
+		beforeBG.style.height = preloadBG.style.height = (gameHeight *wR)+ 'px';
+		beforeBG.style.left = preloadBG.style.left = ((window.innerWidth-gameWidth*wR)/2)+'px';
+		beforeBG.style.top = preloadBG.style.top = ((window.innerHeight-gameHeight *wR)/2)+'px';			
+		loadingBar.style.left = ((window.innerWidth-gameWidth*wR)/2+barXP*wR) + 'px';
+		loadingBar.style.top =  ((window.innerHeight-gameHeight *wR)/2+ barYP*wR) + 'px';			
+		loadingAnim.style.left = ((window.innerWidth-gameWidth*wR)/2+txtXP*wR )+ 'px';
+		loadingAnim.style.top =  ((window.innerHeight-gameHeight *wR)/2+ txtYP*wR) + 'px';
+		loadingAnim.style.width = (txtwt*wR )+ 'px';
+		loadingAnim.style.height =  (txtht *wR) + 'px';
+		if(showBbg==true){
+			beforeBG.style.display = 'block';
+		}else{
+			beforeBG.style.display = 'none';
+		}
+		if(gamerendered==false){
+			if(showBbg==false){
+				preloadBG.style.display = 'block';
+				loadingBar.style.display = 'block';
+				loadingAnim.style.display = 'block';
+				preloaderDiv.style.display = 'block';	
+			}				
+		}
+	}catch(e){
+		console.log("Error");
+	}
+}
+function addListner(){
+	showBbg = true;
+	canvas = document.getElementById("canvas");
+	loadingBar = document.getElementById("loadingBar");
+	preloadBG = document.getElementById("preloadBG");
+	loadingAnim = document.getElementById("loadingAnim");
+	preloaderDiv =  document.getElementById("loaderset");
+	beforeBG = document.getElementById("beforeBG");
+	resizePreloader(null);
+	window.addEventListener("click",onClick);
+	function onClick(e){
+		if (typeof gdsdk !== 'undefined' && gdsdk.showAd !== 'undefined') {
+			gdsdk.showAd();
+		}	
+		showBbg =false;
+		beforeBG.style.display = 'none';
+		window.removeEventListener("click",onClick);
+		init();
+	}
+}
+</script>
+</head>
+<body onload="addListner();" style="margin:0px;overflow:hidden;">
+	<img id="beforeBG" class="img1" src="images/1280X720.png" />
+	<div class="loaderset" id="loaderset">
+		<img id="preloadBG" class="img1" src="images/preload_mc.jpg?candy_plus_candy" />
+		<img id="loadingBar" class="img2" src="images/bar_mc.png?candy_plus_candy" />	
+		<img id="loadingAnim" class="img2" src="images/loader.gif" />	
+    </div>	
+	<div id="xyz">  
+	<canvas id="canvas" width="1280" height="720" style="position: absolute; display: none;"></canvas>
+	</div>
+</body>
+</html>

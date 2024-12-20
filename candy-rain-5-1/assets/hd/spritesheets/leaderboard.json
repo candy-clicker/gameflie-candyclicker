@@ -1,0 +1,575 @@
+{
+    "frames": {
+        "btn_down": {
+            "frame": {
+                "x": 1380,
+                "y": 340,
+                "w": 60,
+                "h": 65
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 60,
+                "h": 65
+            },
+            "sourceSize": {
+                "w": 60,
+                "h": 65
+            }
+        },
+        "btn_invite": {
+            "frame": {
+                "x": 650,
+                "y": 1089,
+                "w": 294,
+                "h": 64
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 294,
+                "h": 64
+            },
+            "sourceSize": {
+                "w": 294,
+                "h": 64
+            }
+        },
+        "btn_invite_ingame": {
+            "frame": {
+                "x": 954,
+                "y": 1089,
+                "w": 142,
+                "h": 64
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 142,
+                "h": 64
+            },
+            "sourceSize": {
+                "w": 142,
+                "h": 64
+            }
+        },
+        "btn_up": {
+            "frame": {
+                "x": 1300,
+                "y": 420,
+                "w": 60,
+                "h": 65
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 60,
+                "h": 65
+            },
+            "sourceSize": {
+                "w": 60,
+                "h": 65
+            }
+        },
+        "giftBubble": {
+            "frame": {
+                "x": 1300,
+                "y": 150,
+                "w": 120,
+                "h": 120
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 120,
+                "h": 120
+            },
+            "sourceSize": {
+                "w": 120,
+                "h": 120
+            }
+        },
+        "giftBubble_active": {
+            "frame": {
+                "x": 1300,
+                "y": 0,
+                "w": 140,
+                "h": 140
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 140,
+                "h": 140
+            },
+            "sourceSize": {
+                "w": 140,
+                "h": 140
+            }
+        },
+        "highscore-avatar-alphaMask": {
+            "frame": {
+                "x": 1300,
+                "y": 495,
+                "w": 50,
+                "h": 50
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 50,
+                "h": 50
+            },
+            "sourceSize": {
+                "w": 50,
+                "h": 50
+            }
+        },
+        "highscore-avatar-border": {
+            "frame": {
+                "x": 1360,
+                "y": 495,
+                "w": 50,
+                "h": 50
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 50,
+                "h": 50
+            },
+            "sourceSize": {
+                "w": 50,
+                "h": 50
+            }
+        },
+        "highscore-avatar-border_num": {
+            "frame": {
+                "x": 1300,
+                "y": 555,
+                "w": 50,
+                "h": 50
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 50,
+                "h": 50
+            },
+            "sourceSize": {
+                "w": 50,
+                "h": 50
+            }
+        },
+        "highscore-avatar-border_num_full": {
+            "frame": {
+                "x": 1360,
+                "y": 555,
+                "w": 50,
+                "h": 50
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 50,
+                "h": 50
+            },
+            "sourceSize": {
+                "w": 50,
+                "h": 50
+            }
+        },
+        "highscore-avatar-userBorder": {
+            "frame": {
+                "x": 1370,
+                "y": 420,
+                "w": 59,
+                "h": 60
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 59,
+                "h": 60
+            },
+            "sourceSize": {
+                "w": 59,
+                "h": 60
+            }
+        },
+        "highscore-h-playerBg": {
+            "frame": {
+                "x": 1106,
+                "y": 1089,
+                "w": 177,
+                "h": 50
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 177,
+                "h": 50
+            },
+            "sourceSize": {
+                "w": 177,
+                "h": 50
+            }
+        },
+        "highscore-h-playerBg_small": {
+            "frame": {
+                "x": 1300,
+                "y": 280,
+                "w": 127,
+                "h": 50
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 127,
+                "h": 50
+            },
+            "sourceSize": {
+                "w": 127,
+                "h": 50
+            }
+        },
+        "highscore-panel-border": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 640,
+                "h": 871
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 640,
+                "h": 871
+            },
+            "sourceSize": {
+                "w": 640,
+                "h": 871
+            }
+        },
+        "highscore-panel-content-bg": {
+            "frame": {
+                "x": 650,
+                "y": 0,
+                "w": 640,
+                "h": 598
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 640,
+                "h": 598
+            },
+            "sourceSize": {
+                "w": 640,
+                "h": 598
+            }
+        },
+        "highscore-panel-tab-friends-active": {
+            "frame": {
+                "x": 650,
+                "y": 784,
+                "w": 640,
+                "h": 68
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 640,
+                "h": 68
+            },
+            "sourceSize": {
+                "w": 640,
+                "h": 68
+            }
+        },
+        "highscore-panel-tab-friends-inactive": {
+            "frame": {
+                "x": 0,
+                "y": 1011,
+                "w": 640,
+                "h": 68
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 640,
+                "h": 68
+            },
+            "sourceSize": {
+                "w": 640,
+                "h": 68
+            }
+        },
+        "highscore-panel-tab-global-active": {
+            "frame": {
+                "x": 650,
+                "y": 1011,
+                "w": 640,
+                "h": 68
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 640,
+                "h": 68
+            },
+            "sourceSize": {
+                "w": 640,
+                "h": 68
+            }
+        },
+        "highscore-panel-tab-global-inactive": {
+            "frame": {
+                "x": 0,
+                "y": 1089,
+                "w": 640,
+                "h": 68
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 640,
+                "h": 68
+            },
+            "sourceSize": {
+                "w": 640,
+                "h": 68
+            }
+        },
+        "highscore-v-hl-current": {
+            "frame": {
+                "x": 652,
+                "y": 881,
+                "w": 604,
+                "h": 70
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 604,
+                "h": 70
+            },
+            "sourceSize": {
+                "w": 604,
+                "h": 70
+            }
+        },
+        "highscore-v-hl": {
+            "frame": {
+                "x": 0,
+                "y": 1167,
+                "w": 604,
+                "h": 70
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 604,
+                "h": 70
+            },
+            "sourceSize": {
+                "w": 604,
+                "h": 70
+            }
+        },
+        "ingame_progress_bar": {
+            "frame": {
+                "x": 0,
+                "y": 1247,
+                "w": 168,
+                "h": 93
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 168,
+                "h": 93
+            },
+            "sourceSize": {
+                "w": 168,
+                "h": 93
+            }
+        },
+        "leaderboard_ingame_panel": {
+            "frame": {
+                "x": 0,
+                "y": 881,
+                "w": 642,
+                "h": 120
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 642,
+                "h": 120
+            },
+            "sourceSize": {
+                "w": 642,
+                "h": 120
+            }
+        },
+        "progress_bar_star_1": {
+            "frame": {
+                "x": 1364,
+                "y": 615,
+                "w": 29,
+                "h": 30
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 29,
+                "h": 30
+            },
+            "sourceSize": {
+                "w": 29,
+                "h": 30
+            }
+        },
+        "progress_bar_star_2": {
+            "frame": {
+                "x": 1300,
+                "y": 655,
+                "w": 42,
+                "h": 31
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 42,
+                "h": 31
+            },
+            "sourceSize": {
+                "w": 42,
+                "h": 31
+            }
+        },
+        "progress_bar_star_3": {
+            "frame": {
+                "x": 1300,
+                "y": 615,
+                "w": 54,
+                "h": 30
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 54,
+                "h": 30
+            },
+            "sourceSize": {
+                "w": 54,
+                "h": 30
+            }
+        },
+        "top_ui_new": {
+            "frame": {
+                "x": 650,
+                "y": 608,
+                "w": 620,
+                "h": 166
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 620,
+                "h": 166
+            },
+            "sourceSize": {
+                "w": 620,
+                "h": 166
+            }
+        },
+        "waiting_icon": {
+            "frame": {
+                "x": 1300,
+                "y": 340,
+                "w": 70,
+                "h": 70
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 70,
+                "h": 70
+            },
+            "sourceSize": {
+                "w": 70,
+                "h": 70
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/Ensighten/spritesmith",
+        "image": "leaderboard.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 1440,
+            "h": 1340
+        },
+        "scale": 1
+    },
+    "animations": {}
+}

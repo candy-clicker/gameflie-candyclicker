@@ -1,0 +1,499 @@
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+    padding: 0;
+}
+
+body {
+	-webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none; 
+	user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    -webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'PT Sans', sans-serif;
+	background-color: #ACACAC;
+	-ms-overflow-style: none;  /* IE и Edge */
+  	scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar {
+	display: none;
+} 
+
+.display-block {
+	display: block;
+}
+.display-none {
+	display: none;  
+}
+.inline-block {
+	display: inline-block;
+}
+.absolute {
+	position: absolute;
+}
+.relative {
+	position: relative;
+}
+.fixed {
+	position: fixed;
+}
+
+/*Локация*/
+#container {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#bannerAd {
+	position: fixed;
+	display: block;
+	bottom: 0%; 
+	left: 50%;
+	margin-left: -364px;
+	background-color: #c3b1b1;
+}
+
+/* Word - present */
+#presentse-word, #studio {
+	opacity: 0;
+}
+
+#game-main, #game-menu, #game-inventory, #game-shop,#game-info-shop, #game-btns, #game-options, #game-load-window {
+	top: 0;
+	left: 0;
+}
+
+#game-btns  {
+	max-height: 10.5%;
+	min-width: 100%;
+}
+
+/*#game-info-shop {
+	top: 40%;
+	left: 25%;
+}*/
+
+#game-money-shop {
+	top: 13%;
+	left: 0%;
+	max-height: 3.75%;
+	min-width: 100%;
+}
+
+#game-bird {
+	opacity: 0;
+	top: 23%;
+}
+
+
+.text_eng, .text_rus, .text_por {
+	display: none;
+}
+
+/* Заставка и стартовое окно ********************************************************************************************************* */
+/* Кнопки стартового окна */
+#sw-start_1_, #sw-continue_1_, #sw-reset_1_, #reset-window, #lang-wind-sw,
+
+/* Главное окно ********************************************************************************************************************* */
+#load-inter-window,
+#game-main, #game-main2, #game-char, #game-btns, 
+/*Фоны*/
+#backgr-main1, #backgr-main2, #backgr-main3, #backgr-main4,
+/*Сообщения*/ 
+#game-messanges,  
+#mes-trans, #mes-trans2, #mes-stamina, #mes-lvlup, #mes-lvlup2, #mes-firstbuy, #mes-shop, #mes-rate, #mes-onlyuse,
+	#mes-cantuse, #mes-compend, #mes-comp-leave, #mes-reward, #wait-ads-mes,
+#mes-start, #img_exit_tutorial, #start_mes_close, #start_mes_1, #start_mes_2, #start_mes_3, #start_mes_4, #start_mes_5, #start_mes_6, #start_mes_7, 
+	#start_mes_8, #start_mes_9, #start_mes_10,
+/*Картинки стимуляторов в окне награды*/
+#reward-str_x5F_stm1, #reward-str_x5F_stm2, #reward-str_x5F_stm3, #reward-bigstr, #reward-bigstm, #reward-str, #reward-money,
+/*Картинки стимуляторов с таймером в главном окне*/
+#stm-main, #str-main, #bigstm-main, #bigstr-main, #str_x5F_stm-main, #str_x5F_stm1-main, #str_x5F_stm2-main, #str_x5F_stm3-main, #stim-timer,
+/* Птицы */
+#game-bird, #bird, #bird2, 
+/* Иконки кнопок перехода на локации соревнований */
+#trans-pullup-timer, #trans-squat-timer,
+/* Main elemenst in comp loc */
+#main-elements-comp,
+/* Bike speed selection */
+#bike-speeds,
+
+/* Элементы чара ***************************************************************************************************************** */
+#man_0, #man_1, #man_2, #man_3,
+/* Hairstyles and beards */
+#beard1_0, #beard2_0, #beard3_0, #beard4_0, #beard5_0, #beard6_0, #beard7_0, #beard8_0,
+	#beard1_1, #beard2_1, #beard3_1, #beard4_1, #beard5_1, #beard6_1, #beard7_1, #beard8_1,
+	#beard1_2, #beard2_2, #beard3_2, #beard4_2, #beard5_2, #beard6_2, #beard7_2, #beard8_2,
+	#beard1_3, #beard2_3, #beard3_3, #beard4_3, #beard5_3, #beard6_3, #beard7_3, #beard8_3,
+#hair1_0, #hair2_0, #hair3_0, #hair4_0, #hair5_0, #hair6_0, #hair7_0, #hair8_0,
+	#hair1_1, #hair2_1, #hair3_1, #hair4_1, #hair5_1, #hair6_1, #hair7_1, #hair8_1,
+	#hair1_2, #hair2_2, #hair3_2, #hair4_2, #hair5_2, #hair6_2, #hair7_2, #hair8_2,
+	#hair1_3, #hair2_3, #hair3_3, #hair4_3, #hair5_3, #hair6_3, #hair7_3, #hair8_3,
+/* Левые голени */
+#first-left-leg1_0, #first-left-leg2_0, #first-left-leg3_0, #first-left-leg4_0, #first-left-leg5_0, #first-left-leg6_0, #first-left-leg7_0, 
+	#first-left-leg8_0, #first-left-leg9_0, #first-left-leg10_0, #first-left-leg11_0, #first-left-leg12_0, #first-left-leg13_0, 
+	#first-left-leg14_0, #first-left-leg15_0, #first-left-leg16_0, #first-left-leg17_0, #first-left-leg18_0, #first-left-leg19_0, 
+	#first-left-leg20_0, #first-left-leg21_0, #first-left-leg22_0, #first-left-leg23_0, #first-left-leg24_0, #first-left-leg25_0, 
+	#first-left-leg26_0, #first-left-leg27_0, #first-left-leg28_0, #first-left-leg29_0, #first-left-leg30_0,
+#first-left-leg1_1, #first-left-leg2_1, #first-left-leg3_1, #first-left-leg4_1, #first-left-leg5_1, #first-left-leg6_1, #first-left-leg7_1, 
+	#first-left-leg8_1, #first-left-leg9_1, #first-left-leg10_1, #first-left-leg11_1, #first-left-leg12_1, #first-left-leg13_1, 
+	#first-left-leg14_1, #first-left-leg15_1, #first-left-leg16_1, #first-left-leg17_1, #first-left-leg18_1, #first-left-leg19_1, 
+	#first-left-leg20_1, #first-left-leg21_1, #first-left-leg22_1, #first-left-leg23_1, #first-left-leg24_1, #first-left-leg25_1, 
+	#first-left-leg26_1, #first-left-leg27_1, #first-left-leg28_1, #first-left-leg29_1, #first-left-leg30_1,
+#first-left-leg1_2, #first-left-leg2_2, #first-left-leg3_2, #first-left-leg4_2, #first-left-leg5_2, #first-left-leg6_2, #first-left-leg7_2, 
+	#first-left-leg8_2, #first-left-leg9_2, #first-left-leg10_2, #first-left-leg11_2, #first-left-leg12_2, #first-left-leg13_2, 
+	#first-left-leg14_2, #first-left-leg15_2, #first-left-leg16_2, #first-left-leg17_2, #first-left-leg18_2, #first-left-leg19_2, 
+	#first-left-leg20_2, #first-left-leg21_2, #first-left-leg22_2, #first-left-leg23_2, #first-left-leg24_2, #first-left-leg25_2, 
+	#first-left-leg26_2, #first-left-leg27_2, #first-left-leg28_2, #first-left-leg29_2, #first-left-leg30_2,
+#first-left-leg1_3, #first-left-leg2_3, #first-left-leg3_3, #first-left-leg4_3, #first-left-leg5_3, #first-left-leg6_3, #first-left-leg7_3, 
+	#first-left-leg8_3, #first-left-leg9_3, #first-left-leg10_3, #first-left-leg11_3, #first-left-leg12_3, #first-left-leg13_3, 
+	#first-left-leg14_3, #first-left-leg15_3, #first-left-leg16_3, #first-left-leg17_3, #first-left-leg18_3, #first-left-leg19_3, 
+	#first-left-leg20_3, #first-left-leg21_3, #first-left-leg22_3, #first-left-leg23_3, #first-left-leg24_3, #first-left-leg25_3, 
+	#first-left-leg26_3, #first-left-leg27_3, #first-left-leg28_3, #first-left-leg29_3, #first-left-leg30_3,
+/* Левые ляхи */
+#second-left-leg1_0, #second-left-leg2_0, #second-left-leg3_0, #second-left-leg4_0, #second-left-leg5_0, #second-left-leg6_0, #second-left-leg7_0,
+	#second-left-leg8_0, #second-left-leg9_0, #second-left-leg10_0, #second-left-leg11_0, #second-left-leg12_0, #second-left-leg13_0, 
+	#second-left-leg14_0, #second-left-leg15_0, #second-left-leg16_0, #second-left-leg17_0, #second-left-leg18_0, #second-left-leg19_0, 
+	#second-left-leg20_0, #second-left-leg21_0, #second-left-leg22_0, #second-left-leg23_0, #second-left-leg24_0, #second-left-leg25_0, 
+	#second-left-leg26_0, #second-left-leg27_0, #second-left-leg28_0, #second-left-leg29_0, #second-left-leg30_0,
+#second-left-leg1_1, #second-left-leg2_1, #second-left-leg3_1, #second-left-leg4_1, #second-left-leg5_1, #second-left-leg6_1, #second-left-leg7_1,
+	#second-left-leg8_1, #second-left-leg9_1, #second-left-leg10_1, #second-left-leg11_1, #second-left-leg12_1, #second-left-leg13_1, 
+	#second-left-leg14_1, #second-left-leg15_1, #second-left-leg16_1, #second-left-leg17_1, #second-left-leg18_1, #second-left-leg19_1, 
+	#second-left-leg20_1, #second-left-leg21_1, #second-left-leg22_1, #second-left-leg23_1, #second-left-leg24_1, #second-left-leg25_1, 
+	#second-left-leg26_1, #second-left-leg27_1, #second-left-leg28_1, #second-left-leg29_1, #second-left-leg30_1,
+#second-left-leg1_2, #second-left-leg2_2, #second-left-leg3_2, #second-left-leg4_2, #second-left-leg5_2, #second-left-leg6_2, #second-left-leg7_2,
+	#second-left-leg8_2, #second-left-leg9_2, #second-left-leg10_2, #second-left-leg11_2, #second-left-leg12_2, #second-left-leg13_2, 
+	#second-left-leg14_2, #second-left-leg15_2, #second-left-leg16_2, #second-left-leg17_2, #second-left-leg18_2, #second-left-leg19_2, 
+	#second-left-leg20_2, #second-left-leg21_2, #second-left-leg22_2, #second-left-leg23_2, #second-left-leg24_2, #second-left-leg25_2, 
+	#second-left-leg26_2, #second-left-leg27_2, #second-left-leg28_2, #second-left-leg29_2, #second-left-leg30_2,
+#second-left-leg1_3, #second-left-leg2_3, #second-left-leg3_3, #second-left-leg4_3, #second-left-leg5_3, #second-left-leg6_3, #second-left-leg7_3,
+	#second-left-leg8_3, #second-left-leg9_3, #second-left-leg10_3, #second-left-leg11_3, #second-left-leg12_3, #second-left-leg13_3, 
+	#second-left-leg14_3, #second-left-leg15_3, #second-left-leg16_3, #second-left-leg17_3, #second-left-leg18_3, #second-left-leg19_3, 
+	#second-left-leg20_3, #second-left-leg21_3, #second-left-leg22_3, #second-left-leg23_3, #second-left-leg24_3, #second-left-leg25_3, 
+	#second-left-leg26_3, #second-left-leg27_3, #second-left-leg28_3, #second-left-leg29_3, #second-left-leg30_3,
+/* Правые голени */
+#first-right-leg1_0, #first-right-leg2_0, #first-right-leg3_0, #first-right-leg4_0, #first-right-leg5_0, #first-right-leg6_0, #first-right-leg7_0,
+	#first-right-leg8_0, #first-right-leg9_0, #first-right-leg10_0, #first-right-leg11_0, #first-right-leg12_0, #first-right-leg13_0, 
+	#first-right-leg14_0, #first-right-leg15_0, #first-right-leg16_0, #first-right-leg17_0, #first-right-leg18_0, #first-right-leg19_0, 
+	#first-right-leg20_0, #first-right-leg21_0, #first-right-leg22_0, #first-right-leg23_0, #first-right-leg24_0, #first-right-leg25_0, 
+	#first-right-leg26_0, #first-right-leg27_0, #first-right-leg28_0, #first-right-leg29_0, #first-right-leg30_0,
+#first-right-leg1_1, #first-right-leg2_1, #first-right-leg3_1, #first-right-leg4_1, #first-right-leg5_1, #first-right-leg6_1, #first-right-leg7_1,
+	#first-right-leg8_1, #first-right-leg9_1, #first-right-leg10_1, #first-right-leg11_1, #first-right-leg12_1, #first-right-leg13_1, 
+	#first-right-leg14_1, #first-right-leg15_1, #first-right-leg16_1, #first-right-leg17_1, #first-right-leg18_1, #first-right-leg19_1, 
+	#first-right-leg20_1, #first-right-leg21_1, #first-right-leg22_1, #first-right-leg23_1, #first-right-leg24_1, #first-right-leg25_1, 
+	#first-right-leg26_1, #first-right-leg27_1, #first-right-leg28_1, #first-right-leg29_1, #first-right-leg30_1,
+#first-right-leg1_2, #first-right-leg2_2, #first-right-leg3_2, #first-right-leg4_2, #first-right-leg5_2, #first-right-leg6_2, #first-right-leg7_2,
+	#first-right-leg8_2, #first-right-leg9_2, #first-right-leg10_2, #first-right-leg11_2, #first-right-leg12_2, #first-right-leg13_2, 
+	#first-right-leg14_2, #first-right-leg15_2, #first-right-leg16_2, #first-right-leg17_2, #first-right-leg18_2, #first-right-leg19_2, 
+	#first-right-leg20_2, #first-right-leg21_2, #first-right-leg22_2, #first-right-leg23_2, #first-right-leg24_2, #first-right-leg25_2, 
+	#first-right-leg26_2, #first-right-leg27_2, #first-right-leg28_2, #first-right-leg29_2, #first-right-leg30_2,
+#first-right-leg1_3, #first-right-leg2_3, #first-right-leg3_3, #first-right-leg4_3, #first-right-leg5_3, #first-right-leg6_3, #first-right-leg7_3,
+	#first-right-leg8_3, #first-right-leg9_3, #first-right-leg10_3, #first-right-leg11_3, #first-right-leg12_3, #first-right-leg13_3, 
+	#first-right-leg14_3, #first-right-leg15_3, #first-right-leg16_3, #first-right-leg17_3, #first-right-leg18_3, #first-right-leg19_3, 
+	#first-right-leg20_3, #first-right-leg21_3, #first-right-leg22_3, #first-right-leg23_3, #first-right-leg24_3, #first-right-leg25_3, 
+	#first-right-leg26_3, #first-right-leg27_3, #first-right-leg28_3, #first-right-leg29_3, #first-right-leg30_3,
+/* Правые ляхи */
+#second-right-leg1_0, #second-right-leg2_0, #second-right-leg3_0, #second-right-leg4_0, #second-right-leg5_0, #second-right-leg6_0, 
+	#second-right-leg7_0, #second-right-leg8_0, #second-right-leg9_0, #second-right-leg10_0, #second-right-leg11_0, #second-right-leg12_0, 
+	#second-right-leg13_0, #second-right-leg14_0, #second-right-leg15_0, #second-right-leg16_0, #second-right-leg17_0, #second-right-leg18_0, 
+	#second-right-leg19_0, #second-right-leg20_0, #second-right-leg21_0, #second-right-leg22_0, #second-right-leg23_0, #second-right-leg24_0, 
+	#second-right-leg25_0, #second-right-leg26_0, #second-right-leg27_0, #second-right-leg28_0, #second-right-leg29_0, #second-right-leg30_0,
+#second-right-leg1_1, #second-right-leg2_1, #second-right-leg3_1, #second-right-leg4_1, #second-right-leg5_1, #second-right-leg6_1, 
+	#second-right-leg7_1, #second-right-leg8_1, #second-right-leg9_1, #second-right-leg10_1, #second-right-leg11_1, #second-right-leg12_1, 
+	#second-right-leg13_1, #second-right-leg14_1, #second-right-leg15_1, #second-right-leg16_1, #second-right-leg17_1, #second-right-leg18_1, 
+	#second-right-leg19_1, #second-right-leg20_1, #second-right-leg21_1, #second-right-leg22_1, #second-right-leg23_1, #second-right-leg24_1, 
+	#second-right-leg25_1, #second-right-leg26_1, #second-right-leg27_1, #second-right-leg28_1, #second-right-leg29_1, #second-right-leg30_1,
+#second-right-leg1_2, #second-right-leg2_2, #second-right-leg3_2, #second-right-leg4_2, #second-right-leg5_2, #second-right-leg6_2, 
+	#second-right-leg7_2, #second-right-leg8_2, #second-right-leg9_2, #second-right-leg10_2, #second-right-leg11_2, #second-right-leg12_2, 
+	#second-right-leg13_2, #second-right-leg14_2, #second-right-leg15_2, #second-right-leg16_2, #second-right-leg17_2, #second-right-leg18_2, 
+	#second-right-leg19_2, #second-right-leg20_2, #second-right-leg21_2, #second-right-leg22_2, #second-right-leg23_2, #second-right-leg24_2, 
+	#second-right-leg25_2, #second-right-leg26_2, #second-right-leg27_2, #second-right-leg28_2, #second-right-leg29_2, #second-right-leg30_2,
+#second-right-leg1_3, #second-right-leg2_3, #second-right-leg3_3, #second-right-leg4_3, #second-right-leg5_3, #second-right-leg6_3, 
+	#second-right-leg7_3, #second-right-leg8_3, #second-right-leg9_3, #second-right-leg10_3, #second-right-leg11_3, #second-right-leg12_3, 
+	#second-right-leg13_3, #second-right-leg14_3, #second-right-leg15_3, #second-right-leg16_3, #second-right-leg17_3, #second-right-leg18_3, 
+	#second-right-leg19_3, #second-right-leg20_3, #second-right-leg21_3, #second-right-leg22_3, #second-right-leg23_3, #second-right-leg24_3, 
+	#second-right-leg25_3, #second-right-leg26_3, #second-right-leg27_3, #second-right-leg28_3, #second-right-leg29_3, #second-right-leg30_3,
+/* Тела */
+#body1_0, #body3_0, #body4_0, #body5_0, #body6_0, #body7_0, #body8_0, #body9_0, #body10_0, #body11_0, #body12_0, #body13_0, #body14_0, #body15_0, #body16_0, #body17_0, #body18_0, #body19_0, #body20_0, #body21_0, #body22_0, #body23_0, #body24_0, #body25_0, #body26_0, #body27_0, #body28_0, #body29_0, #body30_0,
+#body1_1, #body3_1, #body4_1, #body5_1, #body6_1, #body7_1, #body8_1, #body9_1, #body10_1, #body11_1, #body12_1, #body13_1, #body14_1, #body15_1, #body16_1, #body17_1, #body18_1, #body19_1, #body20_1, #body21_1, #body22_1, #body23_1, #body24_1, #body25_1, #body26_1, #body27_1, #body28_1, #body29_1, #body30_1,
+#body1_2, #body3_2, #body4_2, #body5_2, #body6_2, #body7_2, #body8_2, #body9_2, #body10_2, #body11_2, #body12_2, #body13_2, #body14_2, #body15_2, #body16_2, #body17_2, #body18_2, #body19_2, #body20_2, #body21_2, #body22_2, #body23_2, #body24_2, #body25_2, #body26_2, #body27_2, #body28_2, #body29_2, #body30_2,
+#body1_3, #body3_3, #body4_3, #body5_3, #body6_3, #body7_3, #body8_3, #body9_3, #body10_3, #body11_3, #body12_3, #body13_3, #body14_3, #body15_3, #body16_3, #body17_3, #body18_3, #body19_3, #body20_3, #body21_3, #body22_3, #body23_3, #body24_3, #body25_3, #body26_3, #body27_3, #body28_3, #body29_3, #body30_3,
+/* Труселя */
+#underpants1_0, #underpants3_0, #underpants4_0, #underpants5_0, #underpants6_0, #underpants7_0, #underpants9_0, #underpants11_0, #underpants12_0, 
+	#underpants13_0, #underpants14_0, #underpants15_0, #underpants16_0, #underpants17_0, #underpants18_0, #underpants19_0, #underpants20_0, 
+	#underpants21_0, #underpants22_0, #underpants23_0, #underpants24_0, #underpants25_0, #underpants26_0,
+#underpants1_1, #underpants3_1, #underpants4_1, #underpants5_1, #underpants6_1, #underpants7_1, #underpants9_1, #underpants11_1, #underpants12_1, 
+	#underpants13_1, #underpants14_1, #underpants15_1, #underpants16_1, #underpants17_1, #underpants18_1, #underpants19_1, #underpants20_1, 
+	#underpants21_1, #underpants22_1, #underpants23_1, #underpants24_1, #underpants25_1, #underpants26_1,
+#underpants1_2, #underpants3_2, #underpants4_2, #underpants5_2, #underpants6_2, #underpants7_2, #underpants9_2, #underpants11_2, #underpants12_2, 
+	#underpants13_2, #underpants14_2, #underpants15_2, #underpants16_2, #underpants17_2, #underpants18_2, #underpants19_2, #underpants20_2, 
+	#underpants21_2, #underpants22_2, #underpants23_2, #underpants24_2, #underpants25_2, #underpants26_2,
+#underpants1_3, #underpants3_3, #underpants4_3, #underpants5_3, #underpants6_3, #underpants7_3, #underpants9_3, #underpants11_3, #underpants12_3, 
+	#underpants13_3, #underpants14_3, #underpants15_3, #underpants16_3, #underpants17_3, #underpants18_3, #underpants19_3, #underpants20_3, 
+	#underpants21_3, #underpants22_3, #underpants23_3, #underpants24_3, #underpants25_3, #underpants26_3,
+/* Оскал */
+#mouth2_0, #mouth2_1, #mouth2_2, #mouth2_3,
+/* Левые плечи */
+#second-left-arm1_0, #second-left-arm2_0, #second-left-arm3_0, #second-left-arm4_0, #second-left-arm5_0, #second-left-arm6_0, #second-left-arm7_0,
+	#second-left-arm8_0, #second-left-arm9_0, #second-left-arm10_0, #second-left-arm11_0, #second-left-arm12_0, #second-left-arm13_0, 
+	#second-left-arm14_0, #second-left-arm15_0, #second-left-arm16_0, #second-left-arm17_0, #second-left-arm18_0, #second-left-arm19_0, 
+	#second-left-arm20_0, #second-left-arm21_0, #second-left-arm22_0, #second-left-arm23_0, #second-left-arm24_0, #second-left-arm25_0, 
+	#second-left-arm26_0, #second-left-arm27_0, #second-left-arm28_0, #second-left-arm29_0, #second-left-arm30_0, 
+#second-left-arm1_1, #second-left-arm2_1, #second-left-arm3_1, #second-left-arm4_1, #second-left-arm5_1, #second-left-arm6_1, #second-left-arm7_1,
+	#second-left-arm8_1, #second-left-arm9_1, #second-left-arm10_1, #second-left-arm11_1, #second-left-arm12_1, #second-left-arm13_1, 
+	#second-left-arm14_1, #second-left-arm15_1, #second-left-arm16_1, #second-left-arm17_1, #second-left-arm18_1, #second-left-arm19_1, 
+	#second-left-arm20_1, #second-left-arm21_1, #second-left-arm22_1, #second-left-arm23_1, #second-left-arm24_1, #second-left-arm25_1, 
+	#second-left-arm26_1, #second-left-arm27_1, #second-left-arm28_1, #second-left-arm29_1, #second-left-arm30_1, 
+#second-left-arm1_2, #second-left-arm2_2, #second-left-arm3_2, #second-left-arm4_2, #second-left-arm5_2, #second-left-arm6_2, #second-left-arm7_2,
+	#second-left-arm8_2, #second-left-arm9_2, #second-left-arm10_2, #second-left-arm11_2, #second-left-arm12_2, #second-left-arm13_2, 
+	#second-left-arm14_2, #second-left-arm15_2, #second-left-arm16_2, #second-left-arm17_2, #second-left-arm18_2, #second-left-arm19_2, 
+	#second-left-arm20_2, #second-left-arm21_2, #second-left-arm22_2, #second-left-arm23_2, #second-left-arm24_2, #second-left-arm25_2, 
+	#second-left-arm26_2, #second-left-arm27_2, #second-left-arm28_2, #second-left-arm29_2, #second-left-arm30_2, 
+#second-left-arm1_3, #second-left-arm2_3, #second-left-arm3_3, #second-left-arm4_3, #second-left-arm5_3, #second-left-arm6_3, #second-left-arm7_3,
+	#second-left-arm8_3, #second-left-arm9_3, #second-left-arm10_3, #second-left-arm11_3, #second-left-arm12_3, #second-left-arm13_3, 
+	#second-left-arm14_3, #second-left-arm15_3, #second-left-arm16_3, #second-left-arm17_3, #second-left-arm18_3, #second-left-arm19_3, 
+	#second-left-arm20_3, #second-left-arm21_3, #second-left-arm22_3, #second-left-arm23_3, #second-left-arm24_3, #second-left-arm25_3, 
+	#second-left-arm26_3, #second-left-arm27_3, #second-left-arm28_3, #second-left-arm29_3, #second-left-arm30_3, 
+/* Левые предплечья */
+#first-left-arm1_0, #first-left-arm2_0, #first-left-arm3_0, #first-left-arm4_0, #first-left-arm5_0, #first-left-arm6_0, #first-left-arm7_0, 
+	#first-left-arm8_0, #first-left-arm9_0, #first-left-arm10_0, #first-left-arm11_0, #first-left-arm12_0, #first-left-arm13_0, 
+	#first-left-arm14_0, #first-left-arm15_0, #first-left-arm16_0, #first-left-arm17_0, #first-left-arm18_0, #first-left-arm19_0, 
+	#first-left-arm20_0, #first-left-arm21_0, #first-left-arm22_0, #first-left-arm23_0, #first-left-arm24_0, #first-left-arm25_0, 
+	#first-left-arm26_0, #first-left-arm27_0, #first-left-arm28_0, #first-left-arm29_0, #first-left-arm30_0,
+#first-left-arm1_1, #first-left-arm2_1, #first-left-arm3_1, #first-left-arm4_1, #first-left-arm5_1, #first-left-arm6_1, #first-left-arm7_1, 
+	#first-left-arm8_1, #first-left-arm9_1, #first-left-arm10_1, #first-left-arm11_1, #first-left-arm12_1, #first-left-arm13_1, 
+	#first-left-arm14_1, #first-left-arm15_1, #first-left-arm16_1, #first-left-arm17_1, #first-left-arm18_1, #first-left-arm19_1, 
+	#first-left-arm20_1, #first-left-arm21_1, #first-left-arm22_1, #first-left-arm23_1, #first-left-arm24_1, #first-left-arm25_1, 
+	#first-left-arm26_1, #first-left-arm27_1, #first-left-arm28_1, #first-left-arm29_1, #first-left-arm30_1,
+#first-left-arm1_2, #first-left-arm2_2, #first-left-arm3_2, #first-left-arm4_2, #first-left-arm5_2, #first-left-arm6_2, #first-left-arm7_2, 
+	#first-left-arm8_2, #first-left-arm9_2, #first-left-arm10_2, #first-left-arm11_2, #first-left-arm12_2, #first-left-arm13_2, 
+	#first-left-arm14_2, #first-left-arm15_2, #first-left-arm16_2, #first-left-arm17_2, #first-left-arm18_2, #first-left-arm19_2, 
+	#first-left-arm20_2, #first-left-arm21_2, #first-left-arm22_2, #first-left-arm23_2, #first-left-arm24_2, #first-left-arm25_2, 
+	#first-left-arm26_2, #first-left-arm27_2, #first-left-arm28_2, #first-left-arm29_2, #first-left-arm30_2,
+#first-left-arm1_3, #first-left-arm2_3, #first-left-arm3_3, #first-left-arm4_3, #first-left-arm5_3, #first-left-arm6_3, #first-left-arm7_3, 
+	#first-left-arm8_3, #first-left-arm9_3, #first-left-arm10_3, #first-left-arm11_3, #first-left-arm12_3, #first-left-arm13_3, 
+	#first-left-arm14_3, #first-left-arm15_3, #first-left-arm16_3, #first-left-arm17_3, #first-left-arm18_3, #first-left-arm19_3, 
+	#first-left-arm20_3, #first-left-arm21_3, #first-left-arm22_3, #first-left-arm23_3, #first-left-arm24_3, #first-left-arm25_3, 
+	#first-left-arm26_3, #first-left-arm27_3, #first-left-arm28_3, #first-left-arm29_3, #first-left-arm30_3,
+/* Правые плечи */
+#second-right-arm1_0, #second-right-arm2_0, #second-right-arm3_0, #second-right-arm4_0, #second-right-arm5_0, #second-right-arm6_0, 
+	#second-right-arm7_0, #second-right-arm8_0, #second-right-arm9_0, #second-right-arm10_0, #second-right-arm11_0, #second-right-arm12_0, 
+	#second-right-arm13_0, #second-right-arm14_0, #second-right-arm15_0, #second-right-arm16_0, #second-right-arm17_0, #second-right-arm18_0,
+	#second-right-arm19_0, #second-right-arm20_0, #second-right-arm21_0, #second-right-arm22_0, #second-right-arm23_0, #second-right-arm24_0, 
+	#second-right-arm25_0, #second-right-arm26_0, #second-right-arm27_0, #second-right-arm28_0, #second-right-arm29_0, #second-right-arm30_0,
+#second-right-arm1_1, #second-right-arm2_1, #second-right-arm3_1, #second-right-arm4_1, #second-right-arm5_1, #second-right-arm6_1, 
+	#second-right-arm7_1, #second-right-arm8_1, #second-right-arm9_1, #second-right-arm10_1, #second-right-arm11_1, #second-right-arm12_1, 
+	#second-right-arm13_1, #second-right-arm14_1, #second-right-arm15_1, #second-right-arm16_1, #second-right-arm17_1, #second-right-arm18_1,
+	#second-right-arm19_1, #second-right-arm20_1, #second-right-arm21_1, #second-right-arm22_1, #second-right-arm23_1, #second-right-arm24_1, 
+	#second-right-arm25_1, #second-right-arm26_1, #second-right-arm27_1, #second-right-arm28_1, #second-right-arm29_1, #second-right-arm30_1,
+#second-right-arm1_2, #second-right-arm2_2, #second-right-arm3_2, #second-right-arm4_2, #second-right-arm5_2, #second-right-arm6_2, 
+	#second-right-arm7_2, #second-right-arm8_2, #second-right-arm9_2, #second-right-arm10_2, #second-right-arm11_2, #second-right-arm12_2, 
+	#second-right-arm13_2, #second-right-arm14_2, #second-right-arm15_2, #second-right-arm16_2, #second-right-arm17_2, #second-right-arm18_2,
+	#second-right-arm19_2, #second-right-arm20_2, #second-right-arm21_2, #second-right-arm22_2, #second-right-arm23_2, #second-right-arm24_2, 
+	#second-right-arm25_2, #second-right-arm26_2, #second-right-arm27_2, #second-right-arm28_2, #second-right-arm29_2, #second-right-arm30_2,
+#second-right-arm1_3, #second-right-arm2_3, #second-right-arm3_3, #second-right-arm4_3, #second-right-arm5_3, #second-right-arm6_3, 
+	#second-right-arm7_3, #second-right-arm8_3, #second-right-arm9_3, #second-right-arm10_3, #second-right-arm11_3, #second-right-arm12_3, 
+	#second-right-arm13_3, #second-right-arm14_3, #second-right-arm15_3, #second-right-arm16_3, #second-right-arm17_3, #second-right-arm18_3,
+	#second-right-arm19_3, #second-right-arm20_3, #second-right-arm21_3, #second-right-arm22_3, #second-right-arm23_3, #second-right-arm24_3, 
+	#second-right-arm25_3, #second-right-arm26_3, #second-right-arm27_3, #second-right-arm28_3, #second-right-arm29_3, #second-right-arm30_3,
+/* Правые предплечья */
+#first-right-arm1_0, #first-right-arm2_0, #first-right-arm3_0, #first-right-arm4_0, #first-right-arm5_0, #first-right-arm6_0, #first-right-arm7_0,
+	#first-right-arm8_0, #first-right-arm9_0, #first-right-arm10_0, #first-right-arm11_0, #first-right-arm12_0, #first-right-arm13_0, 
+	#first-right-arm14_0, #first-right-arm15_0, #first-right-arm16_0, #first-right-arm17_0, #first-right-arm18_0, #first-right-arm19_0, 
+	#first-right-arm20_0, #first-right-arm21_0, #first-right-arm22_0, #first-right-arm23_0, #first-right-arm24_0, #first-right-arm25_0, 
+	#first-right-arm26_0, #first-right-arm27_0, #first-right-arm28_0, #first-right-arm29_0, #first-right-arm30_0, 
+#first-right-arm1_1, #first-right-arm2_1, #first-right-arm3_1, #first-right-arm4_1, #first-right-arm5_1, #first-right-arm6_1, #first-right-arm7_1,
+	#first-right-arm8_1, #first-right-arm9_1, #first-right-arm10_1, #first-right-arm11_1, #first-right-arm12_1, #first-right-arm13_1, 
+	#first-right-arm14_1, #first-right-arm15_1, #first-right-arm16_1, #first-right-arm17_1, #first-right-arm18_1, #first-right-arm19_1, 
+	#first-right-arm20_1, #first-right-arm21_1, #first-right-arm22_1, #first-right-arm23_1, #first-right-arm24_1, #first-right-arm25_1, 
+	#first-right-arm26_1, #first-right-arm27_1, #first-right-arm28_1, #first-right-arm29_1, #first-right-arm30_1, 
+#first-right-arm1_2, #first-right-arm2_2, #first-right-arm3_2, #first-right-arm4_2, #first-right-arm5_2, #first-right-arm6_2, #first-right-arm7_2,
+	#first-right-arm8_2, #first-right-arm9_2, #first-right-arm10_2, #first-right-arm11_2, #first-right-arm12_2, #first-right-arm13_2, 
+	#first-right-arm14_2, #first-right-arm15_2, #first-right-arm16_2, #first-right-arm17_2, #first-right-arm18_2, #first-right-arm19_2, 
+	#first-right-arm20_2, #first-right-arm21_2, #first-right-arm22_2, #first-right-arm23_2, #first-right-arm24_2, #first-right-arm25_2, 
+	#first-right-arm26_2, #first-right-arm27_2, #first-right-arm28_2, #first-right-arm29_2, #first-right-arm30_2, 
+#first-right-arm1_3, #first-right-arm2_3, #first-right-arm3_3, #first-right-arm4_3, #first-right-arm5_3, #first-right-arm6_3, #first-right-arm7_3,
+	#first-right-arm8_3, #first-right-arm9_3, #first-right-arm10_3, #first-right-arm11_3, #first-right-arm12_3, #first-right-arm13_3, 
+	#first-right-arm14_3, #first-right-arm15_3, #first-right-arm16_3, #first-right-arm17_3, #first-right-arm18_3, #first-right-arm19_3, 
+	#first-right-arm20_3, #first-right-arm21_3, #first-right-arm22_3, #first-right-arm23_3, #first-right-arm24_3, #first-right-arm25_3, 
+	#first-right-arm26_3, #first-right-arm27_3, #first-right-arm28_3, #first-right-arm29_3, #first-right-arm30_3, 
+
+/* Гантели на чаре ************************************************************************************************************************* */
+/* Правые гантели */
+#right-dumb1, #right-dumb2, #right-dumb3, #right-dumb4, #right-dumb5, #right-dumb6, #right-dumb7, #right-dumb8, #right-dumb9, #right-dumb10, 
+	#right-dumb11, #right-dumb12, #right-dumb13, #right-dumb14, #right-dumb15, #right-dumb16, #right-dumb17, #right-dumb18, #right-dumb19,
+	#right-dumb20, #right-dumb21, #right-dumb22, #right-dumb23, #right-dumb24,
+/* Левые гантели */
+#left-dumb1, #left-dumb2, #left-dumb3, #left-dumb4, #left-dumb5, #left-dumb6, #left-dumb7, #left-dumb8, #left-dumb9, #left-dumb10, #left-dumb11,
+	#left-dumb12, #left-dumb13, #left-dumb14, #left-dumb15, #left-dumb16, #left-dumb17, #left-dumb18, #left-dumb19, #left-dumb20, #left-dumb21,
+	#left-dumb22, #left-dumb23, #left-dumb24,
+/* Велотренажеры на чаре ****************************************************************************************************************** */
+#front-bike1,#front-bike2,#front-bike3,#front-bike4,#front-bike5,#front-bike6,#front-bike7,#front-bike8, 
+#back-bike1,#back-bike2,#back-bike3,#back-bike4,#back-bike5,#back-bike6,#back-bike7,#back-bike8,
+/* Педали */
+#right-pedal1,#right-pedal2,#right-pedal3,#right-pedal4,#right-pedal5,#right-pedal6,#right-pedal7,#right-pedal8,
+#left-pedal1,#left-pedal2,#left-pedal3,#left-pedal4,#left-pedal5,#left-pedal6,#left-pedal7,#left-pedal8,
+/* Crossbar */
+#crossbar,
+
+/* Меню чара ***************************************************************************************************************************** */
+#game-menu, 
+#palette-color, #palette-hairstyles, #palette-beards, 
+#progress-bars-menu,
+
+/* Меню инвентаря ************************************************************************************************************************* */
+#game-inventory, 
+/*Фоны*/
+#backgr-invent1, #backgr-invent2, #backgr-invent3, #backgr-invent4,
+/*Гантели*/
+#dumb3-invent, #dumb4-invent, #dumb5-invent, #dumb6-invent, #dumb7-invent, #dumb8-invent, #dumb9-invent, #dumb10-invent, #dumb11-invent, 
+	#dumb12-invent, #dumb13-invent, #dumb14-invent, #dumb15-invent, #dumb16-invent, #dumb17-invent, #dumb18-invent, #dumb19-invent, 
+    #dumb20-invent, #dumb21-invent, #dumb22-invent, #dumb23-invent, #dumb24-invent,	
+/*Велотренажеры*/	
+#bike2-invent, #bike3-invent, #bike4-invent, #bike5-invent, #bike6-invent, #bike7-invent, #bike8-invent,
+/*Стимуляторы*/
+/*#stim_1-dumb, #stim_2-dumb, #stim_3-dumb, #stim_4-dumb, #stim_5-dumb, #stim_6-dumb, #stim_7-dumb, 
+#stim_1-bike, #stim_2-bike, #stim_3-bike, #stim_4-bike, #stim_5-bike, #stim_6-bike, #stim_7-bike,*/
+
+/* Меню магазина ******************************************************************************************************************** */
+#game-shop, #game-money-shop,
+/*Фоны*/
+#backgr-shop1, #backgr-shop2, #backgr-shop3, #backgr-shop4,
+/*Окошки информации о предметах*/
+#game-info-shop, 
+#info-dumb1, #info-dumb2, #info-dumb3, #info-dumb4, #info-dumb5, #info-dumb6, #info-dumb7, #info-dumb8, #info-dumb9, #info-dumb10, #info-dumb11, 
+	#info-dumb12, #info-dumb13, #info-dumb14, #info-dumb15, #info-dumb16, #info-dumb17, #info-dumb18, #info-dumb19, #info-dumb20, #info-dumb21, 
+	#info-dumb22, #info-dumb23, #info-dumb24, 
+#info-bike1, #info-bike2, #info-bike3, #info-bike4, #info-bike5, #info-bike6, #info-bike7, #info-bike8,
+#info-stm, #info-str, #info-bigstm, #info-bigstr, #info-str_x5F_stm1, #info-str_x5F_stm2, #info-str_x5F_stm3,
+#info-sp1, #info-sp2, #info-sp3, #info-sp4, #info-sp5, #info-money1, #info-money2, #info-money3, #info-money4, #info-money5,
+#havent-money, #buy-item, #info-purch-wind, #wait-ads, #info-purch-price,
+
+/* Меню опций ************************************************************************************************************************ */
+#game-options, #credit-window, #no-sound, #consent-window, #yes-cw, #no-cw,
+#backgr-main1, #backgr-main2, #backgr-main3, #backgr-main4, #backgr-comp,
+#backgr-invent1, #backgr-invent2, #backgr-invent3, #backgr-invent4, #backgr-invent-comp,
+#backgr-shop1, #backgr-shop2, #backgr-shop3, #backgr-shop4, #backgr-shop-comp,
+#lang-wind-opt {
+	display: none;
+}
+
+/* Стилизация progress-bar */
+.progress-exp, .progress-exp-const {
+	y: 12.8%;
+	x: 29%;
+	width: 67%;
+	height: 2.5%;
+}
+.progress-stamina, .progress-stm-const {
+	y: 17%;
+	x: 29%;
+	width: 67%;
+	height: 2.5%;
+}
+.progress-stamina-red {
+	y: 17%;
+	x: 29%;
+	width: 13.4%;
+	height: 2.5%;
+	opacity: 0.3;
+}
+
+/*Char menu body exp progress bars*/
+.progress-body-exp, .progress-body-exp-const {
+	y: 37.3%;
+	x: 38%;
+	width: 58%;
+	height: 2%;
+}
+/*Char menu legs exp progress bars*/
+.progress-legs-exp, .progress-legs-exp-const {
+	y: 44%;
+	x: 38%;
+	width: 58%;
+	height: 2%;
+}
+
+/* Классы изменения цветов кнопок при нажатии */
+.yellow {
+	fill: #EAE298;
+}
+.green {
+	fill: #B2E5A1;
+}
+.purple {
+	fill: #EAB2B2;
+}
+.blue {
+	fill: #AFDDE8;
+}
+
+/* Animations ************************************************************************************************************************ */
+.waving-left-wing {
+	animation-name: waving-left-wing;
+	animation-duration: 0.4s;
+	animation-iteration-count: infinite;
+}
+@keyframes waving-left-wing {
+	50% {
+		transform: rotate(90deg);
+	}
+}
+.waving-right-wing {
+	animation-name: waving-right-wing;
+	animation-duration: 0.4s;
+	animation-iteration-count: infinite;
+}
+@keyframes waving-right-wing {
+	50% {
+		transform: rotate(-90deg);
+	}
+}
+.flying1 {
+	animation-name: flying1;
+	animation-duration: 20s;
+}
+@keyframes flying1 {
+	5% {opacity: 1;}
+	22% {transform: translate(-280px, 60px);opacity: 1;}
+	39% {transform: translate(-220px, 280px);opacity: 1;}
+	61% {transform: translate(220px, 320px); opacity: 1;}
+	78% {transform: translate(140px, 60px);opacity: 1;}
+	95% {transform: translate(-60px, 20px);opacity: 1;}
+	100% {transform: translate(0px, 0px);opacity: 0;}
+}
+.flying2 {
+	animation-name: flying2;
+	animation-duration: 20s;
+}
+@keyframes flying2 {
+	5% {opacity: 1;}
+	12% {transform: translate(-160px, 40px);opacity: 1;}
+	35% {transform: translate(200px, 280px);opacity: 1;}
+	54% {transform: translate(-60px, 360px); opacity: 1;}
+	71% {transform: translate(-280px, 160px);opacity: 1;}
+	94% {transform: translate(-60px, 20px);opacity: 1;}
+	100% {transform: translate(0px, 0px);opacity: 0;}
+}
+.flying3 {
+	animation-name: flying3;
+	animation-duration: 20s;
+}
+@keyframes flying3 {
+	5% {opacity: 1;}
+	22% {transform: translate(-280px, 80px);opacity: 1;}
+	50% {transform: translate(220px, 280px);opacity: 1;}
+	78% {transform: translate(-260px, 360px); opacity: 1;}
+	95% {transform: translate(-60px, 20px);opacity: 1;}
+	100% {transform: translate(0px, 0px);opacity: 0;}
+}
+
+
+
+
+
+

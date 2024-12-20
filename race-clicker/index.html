@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Race Clicker Idle</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script type="text/javascript">
+        document.addEventListener("visibilitychange", function () {
+            if (document.visibilityState === 'visible') {
+                // Call Unity's SendMessage when the tab gains focus
+                if (typeof unityInstance !== 'undefined') {
+                    unityInstance.SendMessage('GameManager', 'OnTabFocus');
+                    unityInstance.SendMessage('MenuManager', 'OnTabFocus');
+                }
+            } else {
+                // Call Unity's SendMessage when the tab loses focus
+                if (typeof unityInstance !== 'undefined') {
+                    unityInstance.SendMessage('GameManager', 'OnTabBlur');
+                    unityInstance.SendMessage('MenuManager', 'OnTabBlur');
+                }
+            }
+        });
+    </script>
+    <!--NEW-->
+    <style>
+        #unity-canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        #unity-container {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+    </style>
+    <!--END NEW-->
+    <script type="text/javascript">
+        window.addEventListener('error', function (event) {
+            if (event.message.includes("Failed to read the 'localStorage' property")) {
+                console.log("Caught localStorage error");
+                event.preventDefault();  // Prevents the default browser action on errors
+            }
+        });
+    </script>
+</head>
+<body style="background-color: #0c0d14">
+    <div id="unity-container" class="unity-desktop">
+        <!--NEW-->
+        <canvas id="unity-canvas"></canvas>
+        <!--END NEW-->
+        <div id="unity-loading-bar">
+            <div id="unity-logo"></div>
+            <div id="unity-progress-bar-empty">
+                <div id="unity-progress-bar-full"></div>
+            </div>
+        </div>
+        <div id="unity-warning"> </div>
+        <div id="unity-footer" style="display: none;">
+            <div id="unity-webgl-logo"></div>
+            <div id="unity-fullscreen-button"></div>
+            <div id="unity-build-title">Race Clicker Idle</div>
+        </div>
+    </div>
+    <!--New
+        Used to gather pasted data-->
+    <input style="display:none;" type="text" id="clipboardInput" placeholder="Paste here to alert clipboard data" />
+    <script>
+        var container = document.querySelector("#unity-container");
+        var canvas = document.querySelector("#unity-canvas");
+        var loadingBar = document.querySelector("#unity-loading-bar");
+        var progressBarFull = document.querySelector("#unity-progress-bar-full");
+        var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+        var warningBanner = document.querySelector("#unity-warning");
+
+        // Shows a temporary message banner/ribbon for a few seconds, or
+        // a permanent error message on top of the canvas if type=='error'.
+        // If type=='warning', a yellow highlight color is used.
+        // Modify or remove this function to customize the visually presented
+        // way that non-critical warnings and error messages are presented to the
+        // user.
+        function unityShowBanner(msg, type) {
+            function updateBannerVisibility() {
+                warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
+            }
+            var div = document.createElement('div');
+            div.innerHTML = msg;
+            warningBanner.appendChild(div);
+            if (type == 'error') div.style = 'background: red; padding: 10px;';
+            else {
+                if (type == 'warning') div.style = 'background: yellow; padding: 10px;';
+                setTimeout(function () {
+                    warningBanner.removeChild(div);
+                    updateBannerVisibility();
+                }, 5000);
+            }
+            updateBannerVisibility();
+        }
+
+        var buildUrl = "Build";
+        var loaderUrl = buildUrl + "/GameDistribution.loader.js";
+        var config = {
+            dataUrl: buildUrl + "/GameDistribution.data.unityweb",
+            frameworkUrl: buildUrl + "/GameDistribution.framework.js.unityweb",
+            codeUrl: buildUrl + "/GameDistribution.wasm.unityweb",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "Playsaurus",
+            productName: "Idle Racer",
+            productVersion: "1.0",
+            showBanner: unityShowBanner,
+            //NEW
+            matchWebGLToCanvasSize: false,
+            //END NEW
+        };
+
+        // By default Unity keeps WebGL canvas render target size matched with
+        // the DOM size of the canvas element (scaled by window.devicePixelRatio)
+        // Set this to false if you want to decouple this synchronization from
+        // happening inside the engine, and you would instead like to size up
+        // the canvas DOM size and WebGL render target sizes yourself.
+        // config.matchWebGLToCanvasSize = false;
+
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            // Mobile device style: fill the whole browser client area with the game canvas:
+
+            var meta = document.createElement('meta');
+            meta.name = 'viewport';
+            meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+            document.getElementsByTagName('head')[0].appendChild(meta);
+            container.className = "unity-mobile";
+            canvas.className = "unity-mobile";
+
+            // To lower canvas resolution on mobile devices to gain some
+            // performance, uncomment the following line:
+            // config.devicePixelRatio = 1;
+
+            unityShowBanner('WebGL builds are not supported on mobile devices.');
+        }
+        //REMOVED ELSE STATEMENT
+
+        loadingBar.style.display = "block";
+
+        var script = document.createElement("script");
+        script.src = loaderUrl;
+        script.onload = () => {
+            createUnityInstance(canvas, config, (progress) => {
+                progressBarFull.style.width = 100 * progress + "%";
+                //NEW
+                canvas.width = 1280;
+                canvas.height = 720;
+                //END NEW
+            }).then((unityInstance) => {
+                instance = unityInstance;
+                window.unityInstance = unityInstance;
+                loadingBar.style.display = "none";
+                fullscreenButton.onclick = () => {
+                    unityInstance.SetFullscreen(1);
+                };
+                window.addEventListener('resize', function () {
+                    console.log("resize called form index");
+                    instance.SendMessage('UI', 'ResizeUI');
+                });
+            }).catch((message) => {
+                alert(message);
+            });
+        };
+        var instance;
+        function Pause() {
+            instance.SendMessage('MyGame.GameManager', 'Pause');
+        };
+        function Unpause() {
+            instance.SendMessage('MyGame.GameManager', 'Unpause');
+        };
+        //NEW
+        function CopyFunction(clipboardText) {
+            navigator.clipboard.writeText(clipboardText).then(function () {
+                console.log('Text successfully copied to clipboard:', clipboardText);
+            }).catch(function (err) {
+                console.error('Could not copy text: ', err);
+            });
+        };
+        function GetClipboardData() {
+            let Prompt = prompt("Please paste here:");
+            if (Prompt != null) {
+                return Prompt;
+            } else {
+                return "";
+            }
+        };
+        function reduceCanvasSize() {
+            var canvas = document.querySelector("#unity-canvas");
+            canvas.style.visibility = "hidden"; // Hide canvas
+            setTimeout(function () {
+                canvas.width = 640;  // 50% of 1280
+                canvas.height = 360;  // 50% of 720
+                canvas.style.width = "100%";
+                canvas.style.height = "100%";
+                canvas.style.visibility = "visible"; // Show canvas
+            }, 50);  // 50ms delay to ensure canvas gets hidden before size change
+        };
+        function resetCanvasSize() {
+            var canvas = document.querySelector("#unity-canvas");
+            canvas.style.visibility = "hidden"; // Hide canvas
+            setTimeout(function () {
+                canvas.width = 1280;
+                canvas.height = 720;
+                canvas.style.width = "100%";
+                canvas.style.height = "100%";
+                canvas.style.visibility = "visible"; // Show canvas
+            }, 50);  // 50ms delay to ensure canvas gets hidden before size change
+        };
+        //END NEW
+        document.body.appendChild(script);
+    </script>
+
+    <script type="text/javascript">
+
+        const callbacks = {
+            adFinished: () => { Unpause(); console.log("End rewarded ad (callback)") },
+            adError: (error) => { Unpause(); console.log("Error rewarded ad (callback)", error) },
+            adStarted: () => { Pause(); console.log("Start rewarded ad (callback)") },
+        };
+    </script>
+</body>
+</html>

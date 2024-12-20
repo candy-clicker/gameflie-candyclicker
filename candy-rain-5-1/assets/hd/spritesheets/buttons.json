@@ -1,0 +1,595 @@
+{
+    "frames": {
+        "Mission_Button_locked_yellow": {
+            "frame": {
+                "x": 420,
+                "y": 318,
+                "w": 61,
+                "h": 60
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 61,
+                "h": 60
+            },
+            "sourceSize": {
+                "w": 61,
+                "h": 60
+            }
+        },
+        "Mission_Button_yellow": {
+            "frame": {
+                "x": 491,
+                "y": 318,
+                "w": 61,
+                "h": 60
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 61,
+                "h": 60
+            },
+            "sourceSize": {
+                "w": 61,
+                "h": 60
+            }
+        },
+        "booster_plus": {
+            "frame": {
+                "x": 745,
+                "y": 414,
+                "w": 34,
+                "h": 34
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 34,
+                "h": 34
+            },
+            "sourceSize": {
+                "w": 34,
+                "h": 34
+            }
+        },
+        "btn_buy": {
+            "frame": {
+                "x": 244,
+                "y": 536,
+                "w": 73,
+                "h": 73
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 73,
+                "h": 73
+            },
+            "sourceSize": {
+                "w": 73,
+                "h": 73
+            }
+        },
+        "btn_chest_gate": {
+            "frame": {
+                "x": 409,
+                "y": 176,
+                "w": 136,
+                "h": 65
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 136,
+                "h": 65
+            },
+            "sourceSize": {
+                "w": 136,
+                "h": 65
+            }
+        },
+        "btn_daily_challenge": {
+            "frame": {
+                "x": 516,
+                "y": 414,
+                "w": 61,
+                "h": 60
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 61,
+                "h": 60
+            },
+            "sourceSize": {
+                "w": 61,
+                "h": 60
+            }
+        },
+        "btn_game_pause": {
+            "frame": {
+                "x": 327,
+                "y": 536,
+                "w": 73,
+                "h": 73
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 73,
+                "h": 73
+            },
+            "sourceSize": {
+                "w": 73,
+                "h": 73
+            }
+        },
+        "btn_green": {
+            "frame": {
+                "x": 0,
+                "y": 414,
+                "w": 198,
+                "h": 112
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 198,
+                "h": 112
+            },
+            "sourceSize": {
+                "w": 198,
+                "h": 112
+            }
+        },
+        "btn_home": {
+            "frame": {
+                "x": 204,
+                "y": 116,
+                "w": 168,
+                "h": 166
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 168,
+                "h": 166
+            },
+            "sourceSize": {
+                "w": 168,
+                "h": 166
+            }
+        },
+        "btn_moregames": {
+            "frame": {
+                "x": 409,
+                "y": 0,
+                "w": 168,
+                "h": 166
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 168,
+                "h": 166
+            },
+            "sourceSize": {
+                "w": 168,
+                "h": 166
+            }
+        },
+        "btn_orange": {
+            "frame": {
+                "x": 208,
+                "y": 414,
+                "w": 198,
+                "h": 112
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 198,
+                "h": 112
+            },
+            "sourceSize": {
+                "w": 198,
+                "h": 112
+            }
+        },
+        "btn_play": {
+            "frame": {
+                "x": 0,
+                "y": 116,
+                "w": 194,
+                "h": 192
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 194,
+                "h": 192
+            },
+            "sourceSize": {
+                "w": 194,
+                "h": 192
+            }
+        },
+        "btn_plus": {
+            "frame": {
+                "x": 158,
+                "y": 622,
+                "w": 58,
+                "h": 59
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 58,
+                "h": 59
+            },
+            "sourceSize": {
+                "w": 58,
+                "h": 59
+            }
+        },
+        "btn_present": {
+            "frame": {
+                "x": 410,
+                "y": 536,
+                "w": 73,
+                "h": 73
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 73,
+                "h": 73
+            },
+            "sourceSize": {
+                "w": 73,
+                "h": 73
+            }
+        },
+        "btn_red": {
+            "frame": {
+                "x": 587,
+                "y": 0,
+                "w": 198,
+                "h": 112
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 198,
+                "h": 112
+            },
+            "sourceSize": {
+                "w": 198,
+                "h": 112
+            }
+        },
+        "btn_sound_off": {
+            "frame": {
+                "x": 587,
+                "y": 366,
+                "w": 148,
+                "h": 146
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 148,
+                "h": 146
+            },
+            "sourceSize": {
+                "w": 148,
+                "h": 146
+            }
+        },
+        "btn_sound_on": {
+            "frame": {
+                "x": 0,
+                "y": 536,
+                "w": 148,
+                "h": 146
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 148,
+                "h": 146
+            },
+            "sourceSize": {
+                "w": 148,
+                "h": 146
+            }
+        },
+        "btn_start_goal": {
+            "frame": {
+                "x": 158,
+                "y": 536,
+                "w": 76,
+                "h": 76
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 76,
+                "h": 76
+            },
+            "sourceSize": {
+                "w": 76,
+                "h": 76
+            }
+        },
+        "btn_task_blank": {
+            "frame": {
+                "x": 493,
+                "y": 536,
+                "w": 73,
+                "h": 73
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 73,
+                "h": 73
+            },
+            "sourceSize": {
+                "w": 73,
+                "h": 73
+            }
+        },
+        "btn_task_info": {
+            "frame": {
+                "x": 576,
+                "y": 536,
+                "w": 73,
+                "h": 73
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 73,
+                "h": 73
+            },
+            "sourceSize": {
+                "w": 73,
+                "h": 73
+            }
+        },
+        "btn_trash": {
+            "frame": {
+                "x": 659,
+                "y": 536,
+                "w": 73,
+                "h": 73
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 73,
+                "h": 73
+            },
+            "sourceSize": {
+                "w": 73,
+                "h": 73
+            }
+        },
+        "btn_trash_buy": {
+            "frame": {
+                "x": 0,
+                "y": 692,
+                "w": 73,
+                "h": 73
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 73,
+                "h": 73
+            },
+            "sourceSize": {
+                "w": 73,
+                "h": 73
+            }
+        },
+        "btn_x": {
+            "frame": {
+                "x": 416,
+                "y": 414,
+                "w": 90,
+                "h": 79
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 90,
+                "h": 79
+            },
+            "sourceSize": {
+                "w": 90,
+                "h": 79
+            }
+        },
+        "btn_x2": {
+            "frame": {
+                "x": 292,
+                "y": 318,
+                "w": 118,
+                "h": 62
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 118,
+                "h": 62
+            },
+            "sourceSize": {
+                "w": 118,
+                "h": 62
+            }
+        },
+        "button_green": {
+            "frame": {
+                "x": 0,
+                "y": 318,
+                "w": 282,
+                "h": 86
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 282,
+                "h": 86
+            },
+            "sourceSize": {
+                "w": 282,
+                "h": 86
+            }
+        },
+        "button_play": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 399,
+                "h": 106
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 399,
+                "h": 106
+            },
+            "sourceSize": {
+                "w": 399,
+                "h": 106
+            }
+        },
+        "end_game_btn": {
+            "frame": {
+                "x": 587,
+                "y": 122,
+                "w": 198,
+                "h": 112
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 198,
+                "h": 112
+            },
+            "sourceSize": {
+                "w": 198,
+                "h": 112
+            }
+        },
+        "moves-ad-btn": {
+            "frame": {
+                "x": 587,
+                "y": 244,
+                "w": 198,
+                "h": 112
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 198,
+                "h": 112
+            },
+            "sourceSize": {
+                "w": 198,
+                "h": 112
+            }
+        },
+        "send_heart_button": {
+            "frame": {
+                "x": 745,
+                "y": 366,
+                "w": 36,
+                "h": 38
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 36,
+                "h": 38
+            },
+            "sourceSize": {
+                "w": 36,
+                "h": 38
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/Ensighten/spritesmith",
+        "image": "buttons.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 785,
+            "h": 765
+        },
+        "scale": 1
+    },
+    "animations": {}
+}

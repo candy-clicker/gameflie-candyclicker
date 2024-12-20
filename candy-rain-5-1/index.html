@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <script>window._game_loading_timer = Date.now()</script>
+
+  <title>Candy Rain 5</title>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="Phaser App">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.01">
+
+  <link rel="apple-touch-icon" href="/candy-rain-5/favicon.png">
+  <link rel="shortcut icon" href="/candy-rain-5/favicon.ico">
+
+  <meta name="game-slug" content="candy-rain-5">
+  <meta name="splashscreen-game-url"
+    content="https://d1bjj4kazoovdg.cloudfront.net/assets/games/forest-match/teaser.jpg">
+  <meta name="splashscreen-big-game-url"
+    content="https://d1bjj4kazoovdg.cloudfront.net/assets/games/forest-match/teaser@2x.jpg">
+
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+
+  <!-- <script src="https://dop3jnx8my3ym.cloudfront.net/sg-web-sdk/sg-web-sdk.1.min.js" id="sg-sdk"></script> -->
+  <script src="azerion-integration-sdk.js" defer></script>
+  <script src="js/mockSGSDK.js" defer></script>  
+  <script src="azerion-libs.js" defer></script>  
+
+  <style>
+    #focusHelper {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      display: none;
+      background-color: #000000;
+      opacity: 0;
+      top: 0px;
+      left: 0px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="adContainer" class="horizontal">
+    <div id="adPlaceholder" class="desktop">
+    </div>
+  </div>
+
+  <div id="gameFontPreload">
+    <div style="font-family: ComicSansBold" class='fontPreload'>.</div>
+  </div>
+
+  <div id="focusHelper"></div>
+  <script src="js/custom-phaser.min.js" defer ></script>
+  <script src="js/game.js" defer onload="_loadGame()"></script>
+  <script>
+    window.addEventListener("blur", function () { document.getElementById('focusHelper').style['display'] = "block" })
+    window.addEventListener("focus", function () { document.getElementById('focusHelper').style['display'] = "none" })
+  </script>
+</body>
+
+</html>
