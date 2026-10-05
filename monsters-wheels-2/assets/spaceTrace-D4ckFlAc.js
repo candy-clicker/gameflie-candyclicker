@@ -1,0 +1,1 @@
+var e=24,t=[],n=0;function r(){n++}function i(r){t.push({tag:r,frame:n}),t.length>e&&t.shift()}function a(){return t.map(e=>`${e.tag}@${e.frame-n}`)}export{i as n,a as r,r as t};

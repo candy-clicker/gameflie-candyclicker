@@ -1,0 +1,9 @@
+{
+  "finish": {
+    "coins": {
+      "visible": true,
+      "y": 15,
+      "unit": "px"
+    }
+  }
+}
